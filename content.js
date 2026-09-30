@@ -58,6 +58,16 @@ export const content = [
             "children": [
               "Раскол"
             ]
+          },
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "https://buy.stripe.com/bJe5kD0yteiN67P3FXgjC00",
+              "class": "donate-nav"
+            },
+            "children": [
+              "Поддержать · $5"
+            ]
           }
         ]
       },
@@ -813,6 +823,33 @@ export const content = [
                     },
                     "children": [
                       "↑"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "donate-block"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "href": "https://buy.stripe.com/bJe5kD0yteiN67P3FXgjC00",
+                      "class": "donate-button"
+                    },
+                    "children": [
+                      "Поддержать Нейроцерковь — $5"
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "attrs": {
+                      "class": "donate-note"
+                    },
+                    "children": [
+                      "На развитие сайта и создание материалов. Разовый платёж через Stripe."
                     ]
                   }
                 ]
