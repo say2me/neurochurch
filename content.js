@@ -1,4 +1,6 @@
-// Content tree for the manifesto. Text is rendered with DOM text nodes.
+import { videoSection, socialSection } from './community.js';
+
+// Trusted local content, rendered with DOM text nodes.
 export const content = [
   "\n",
   {
@@ -32,6 +34,24 @@ export const content = [
           "aria-label": "Главная навигация"
         },
         "children": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "#videos"
+            },
+            "children": [
+              "Видео"
+            ]
+          },
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "#socials"
+            },
+            "children": [
+              "Соцсети"
+            ]
+          },
           {
             "tag": "a",
             "attrs": {
@@ -181,20 +201,48 @@ export const content = [
                     ]
                   },
                   {
-                    "tag": "a",
+                    "tag": "div",
                     "attrs": {
-                      "class": "text-link",
-                      "href": "#creed"
+                      "class": "hero-links"
                     },
                     "children": [
-                      "Читать манифест ",
                       {
-                        "tag": "span",
+                        "tag": "a",
                         "attrs": {
-                          "aria-hidden": "true"
+                          "class": "text-link",
+                          "href": "#videos"
                         },
                         "children": [
-                          "↓"
+                          "Смотреть видео-мем"
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "text-link",
+                          "href": "#socials"
+                        },
+                        "children": [
+                          "Нейроцерковь в соцсетях"
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "text-link",
+                          "href": "#creed"
+                        },
+                        "children": [
+                          "Читать манифест ",
+                          {
+                            "tag": "span",
+                            "attrs": {
+                              "aria-hidden": "true"
+                            },
+                            "children": [
+                              "↓"
+                            ]
+                          }
                         ]
                       }
                     ]
@@ -227,6 +275,8 @@ export const content = [
           }
         ]
       },
+      videoSection,
+      socialSection,
       "\n",
       {
         "tag": "section",
