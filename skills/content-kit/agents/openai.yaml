@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content kit"
+  short_description: "Контент-пакеты и шаблоны небольших скиллов"
+  default_prompt: "Используй $content-kit для подготовки контента по брифу или создания скилла для отдельного формата."
